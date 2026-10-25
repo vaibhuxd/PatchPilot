@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+
+:root {
+  color-scheme: dark;
+
+  /* Color tokens */
+  --bg-canvas: #090c13;
+  --bg-panel: #10151f;
+  --bg-panel-raised: #141b28;
+  --bg-inset: #0c1018;
+  --border-subtle: #1e2634;
+  --border-strong: #2b3648;
+
+  --accent-blue: #4f8cff;
+  --accent-cyan: #35d4e0;
+  --accent-blue-dim: rgba(79, 140, 255, 0.14);
+  --accent-cyan-dim: rgba(53, 212, 224, 0.12);
+
+  --text-primary: #e7ecf5;
+  --text-secondary: #aab4c7;
+  --text-muted: #6b7690;
+
+  --status-proposed: #8b96a8;
+  --status-untested: #c9a94d;
+  --status-passed: #3fcf8e;
+  --status-failed: #f06868;
+
+  --font-display: "Space Grotesk", "IBM Plex Sans", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 600px at 85% -10%, rgba(79, 140, 255, 0.07), transparent 60%),
+    radial-gradient(900px 500px at -10% 110%, rgba(53, 212, 224, 0.05), transparent 55%),
+    var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+textarea,
+input {
+  font-family: var(--font-mono);
+}
+
+::selection {
+  background: var(--accent-blue-dim);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 2px;
+}
+
+code,
+pre {
+  font-family: var(--font-mono);
+}
+
+.scroll-x {
+  overflow-x: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

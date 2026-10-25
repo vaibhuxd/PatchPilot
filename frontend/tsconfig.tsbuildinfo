@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/api.ts","./src/diff.ts","./src/main.tsx","./src/components/codeeditor.tsx","./src/components/diffview.tsx","./src/components/scenariopicker.tsx","./src/components/statusbadge.tsx","./src/components/testresults.tsx"],"version":"5.9.3"}
