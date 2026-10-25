@@ -59,7 +59,8 @@ export interface TestResponse {
   results: TestResultItem[];
 }
 
-const BASE = "/api";
+
+const BASE = "https://patchpilot-api-docker.onrender.com/api";
 
 async function postJSON<T>(path: string, body: unknown): Promise<T> {
   const res = await fetch(`${BASE}${path}`, {
