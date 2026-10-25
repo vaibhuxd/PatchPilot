@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+:root {
+  color-scheme: dark;
+  --ink: #090b0c; --coal: #121716; --carbon: #171d1b; --raised: #202724;
+  --line: #303934; --line-hot: #56615a; --acid: #d9ff55; --acid-soft: rgba(217,255,85,.12);
+  --orange: #ff7d3b; --blue: #88b8ff; --red: #ff6760; --text: #f2f4ed; --muted: #9ea69f; --faint: #69716b;
+  --font-display: "Space Grotesk", sans-serif; --font-body: "Manrope", sans-serif; --font-mono: "DM Mono", Consolas, monospace;
+  --status-proposed: #aab3ad; --status-untested: var(--orange); --status-passed: var(--acid); --status-failed: var(--red);
+}
+* { box-sizing: border-box; } html { background: var(--ink); scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; color: var(--text); font-family: var(--font-body); background: var(--ink); -webkit-font-smoothing: antialiased; }
+button, textarea { font: inherit; } button { cursor: pointer; } button:disabled { cursor: not-allowed; } p, h1, h2, h3 { margin: 0; }
+code, pre { font-family: var(--font-mono); } ::selection { background: var(--acid); color: var(--ink); } :focus-visible { outline: 2px solid var(--acid); outline-offset: 3px; }
+.scroll-x { overflow-x: auto; } @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; } }
+
